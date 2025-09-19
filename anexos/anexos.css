@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+  background-color: #162b96;
+  color: #4B83F2;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #F3F0EB;
+  font-size: 130px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background-color: #f135aa;
+  border-radius: 25px;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: rgb(54, 52, 52);
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+  margin: 30px 40px;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Galeria de imagens */
+.galeria-anexos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.galeria-anexos img {
+  width: 230px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-anexos img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Professores */
+.professoras {
+  background-color: #f135aa;
+  padding: 20px 40px;
+  margin: 60px auto 40px;
+  width: fit-content;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.professoras:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

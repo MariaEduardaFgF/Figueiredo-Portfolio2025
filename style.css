@@ -1,0 +1,597 @@
+body{
+    background-color: #162b96;
+    color:#fefefe;
+    font-family: serif;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+    background-color: #fefefe;
+}
+
+a{
+    color:#162b96;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul li a {
+  position: relative;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: #162b96; 
+  color: #fefefe;            
+}
+
+img {
+    width: 180px;
+    height: 200px;
+    border-radius: 1%;
+    border: 5px solid #fefefe;
+}
+.center{
+    text-align: center;
+}
+h1{
+    color: #fefefe;
+    font-size: 180px;
+    text-align: center;
+}
+h2{
+    color: #fefefe;
+    font-size: 310px;
+    text-align: center;
+    margin-top: -210px;
+}
+h3{
+    margin-top: -100px;
+    text-align: center;
+    font-size: 25px;
+}
+h3 {
+  margin-top: -130px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #fefefe;
+  color: #162b96;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+   transition: transform 0.3s ease-in-out;
+}
+
+h3:hover {
+  transform: scale(1.1); /* Aumenta 10% ao passar o mouse */
+}
+
+h4{
+    color: #162b96;
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+ .perfil {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
+}
+
+.ip {
+  flex: 1;
+}
+
+.foto-perfil {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 230px; 
+}
+h5{
+    color: #fefefe;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #162b96;
+  border-radius: 20px;
+  border: 2px solid #fefefe;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cards h5 {
+  text-align: left;
+  font-size: 70px; 
+  color:#fefefe;
+  margin-left: 20px; 
+  margin-bottom: 30px;
+  font-weight: bold; 
+}
+
+.card {
+  background-color: #fefefe;
+  border: 2px solid #162b96 ;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+    width: 30%;
+  min-width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h6 {
+  color: #162b96;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #162b96;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #162b96;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #a9c0ff;
+}
+h6{
+    color: #162b96;
+    font-size: 70px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin: 95px;
+    }
+p{
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+table {
+   width: 90%;
+  margin: 40px auto; /* Centraliza e dá espaçamento */
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white; /* Garante fundo visível */
+  z-index: 1;
+  position: relative;
+    transition: transform 0.3s ease;
+}
+table:hover {
+  transform: scale(1.05); /* aumenta 5% */
+}
+
+th, td {
+   border: 2px solid #1e3d8f;
+  padding: 15px;
+  font-size: 16px;
+  color: #000;
+}
+
+th {
+  background-color: #1e3d8f;
+  color: white;
+  font-size: 22px;
+}
+
+.titulo-estudo {
+  text-align: center;
+  color: #1e3d8f;
+  font-size: 70px;
+  margin-top: 80px;
+  font-weight: bold;
+}
+
+.tabela-container {
+  display: flex;
+  justify-content: center;
+}
+
+.projeto-vida {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+
+
+.titulo-projeto {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 60px 0 30px 0; 
+  color: #1e3d8f;
+}
+.curriculo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.curriculo-titulo {
+  font-size: 80px;
+  color: #162b96;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.curriculo-imagem {
+  max-width: 100%;
+  height: auto;
+  display: block;
+    width: 80%; 
+   margin: 10px auto;
+   border: 2px solid #003366;
+   border-radius: 10px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.curriculo-imagem:hover{
+  transform: scale(1.1);
+}
+
+.considerações {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.considerações-titulo {
+  font-size: 80px;
+  color: #162b96;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.considerações-imagem {
+  max-width: 100%;
+  height: auto;
+  display: block;
+    width: 80%; 
+   margin: 10px auto;
+   border: 2px solid #003366;
+   border-radius: 10px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.considerações-imagem:hover{
+  transform: scale(1.1);
+}
+
+.referencias {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.referencias-titulo {
+  font-size: 80px;
+  color: #162b96;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.referencias-imagem {
+  max-width: 100%;
+  height: auto;
+  display: block;
+    width: 70%; 
+   margin: 10px auto;
+   border-radius: 10px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.referencias-imagem:hover{
+  transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #fefefe;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #fefefe;
+  border-top: 1px solid #fefefe;
+}
+
+main{
+    background-color: #fefefe;
+}
+.obj{
+     display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+}
+img{
+    width: 650px;
+    height: 500px;
+    margin-top: -50px;
+
+}
+.historia-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+}
+
+.texto-historia {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.video-historia {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -130px;
+}
+
+.video-historia video {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  h1, h2 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #162b96;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+}
+
+#topo:hover {
+  background-color: #1e3d8f;
+}
+.atividades {
+    text-align: center;
+    padding: 250px 0 25px;
+}
+
+.atividades h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #162b96;
+    margin-bottom: 40px;
+}
+
+.botoes-atividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.botao-atividade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.botao-atividade img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.botao-atividade:hover img {
+    transform: scale(1.1);
+}
+
+.botao-atividade span {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contatos {
+  text-align: center;
+  margin: 120px auto;
+  padding: 40px 20px;
+}
+
+.contatos-titulo {
+  font-size: 70px;
+  font-weight: bold;
+  color: #162b96;
+  margin: 20px 0 80px; /* mais espaço acima e abaixo */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  position: relative;
+}
+
+
+.contato-card {
+  position: relative;
+  display: inline-block;
+  background-color: #162b96;
+  border-radius: 20px;
+  padding: 60px 20px 30px;
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.contato-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contato-card .titulo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px 0 10px;
+}
+
+.contato-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.contato-card a:hover {
+  color: #fff;
+}
+/* === Slider Anexos (mesma largura das referências) === */
+.anexos { text-align: center; margin: 60px auto; }
+
+.anexos-slider {
+  position: relative;
+  width: 70%;          /* igual às .referencias-imagem */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+.anexos-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.anexo { min-width: 100%; }
+
+.anexos-slider .anexo img {
+  width: 100% !important;     /* força a ocupar toda a largura do slider */
+  height: auto !important;
+  display: block;
+  border-radius: 10px;
+  margin: 0 !important;       /* anula seu margin-top global de img */
+}
+
+/* Botões (setas) */
+.anexos-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px; height: 44px;
+  border: none; border-radius: 50%;
+  background: rgba(22,43,150,0.85);
+  color: #fff; cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.anexos-btn:hover { background: #162b96; }
+.anexos-btn.prev { left: 10px; }
+.anexos-btn.next { right: 10px; }
+
+/* Pontinhos */
+.anexos-dots { margin-top: 12px; }
+.anexos-dots button {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 1px solid #162b96; background: #cbd3ff;
+  margin: 0 4px; cursor: pointer;
+}
+.anexos-dots button.active { background: #162b96; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .anexos-slider { width: 90%; }
+}
+

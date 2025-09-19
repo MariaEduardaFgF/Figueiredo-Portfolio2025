@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+  background-color: #162b96;
+  color: #4B83F2;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #F3F0EB;
+  font-size: 130px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background-color: #f135aa;
+  border-radius: 25px;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider */
+.hum-slider {
+  position: relative;
+  max-width: 950px;
+  width: 90%;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: transparent;
+}
+
+.hum-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hum-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.hum-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Botões */
+.hum-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(22,43,150,0.85);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.hum-btn:hover { background: #162b96; }
+.hum-btn.prev { left: 10px; }
+.hum-btn.next { right: 10px; }
+
+/* Pontinhos */
+.hum-dots {
+  text-align: center;
+  margin-top: 12px;
+}
+.hum-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #162b96;
+  background: #cbd3ff;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.hum-dots button.active {
+  background: #162b96;
+}
